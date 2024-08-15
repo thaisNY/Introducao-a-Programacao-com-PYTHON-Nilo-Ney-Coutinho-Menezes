@@ -8,5 +8,6 @@ while i < 24:
     if i == 1:
         print(f' Mes: {i} |  Saldo na conta: {deposito_inicial}')
     else:
-        dinheiro_conta = (dinheiro_conta * taxa_juros) + dinheiro_conta
+        deposito_do_mes = float(input('Voce quer depositar algum valor. Digite 0 para nao e um valor para adiconar a conta'))
+        dinheiro_conta = (dinheiro_conta * taxa_juros) + dinheiro_conta + deposito_do_mes
         print(f' Mes: {i} |  Saldo na conta: {dinheiro_conta}')
